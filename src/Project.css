@@ -1,0 +1,50 @@
+.projects {
+    background-color: #2e3047 !important;
+    color: #3c3f58 !important;
+    padding: 2rem;
+    margin: 10% 0;
+}
+
+.section-title {
+    color: #3bba9c;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.section {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.project-card {
+    background-color: #bfc8d0;
+    color: #3c3f58 !important;
+    border-radius: 15px;
+    border: none;
+    height: 100%;
+}
+
+.project-card .card-body {
+    padding: 1rem;
+}
+
+.project-card .card-title {
+    margin-bottom: 10px;
+}
+
+.project-card .card-text {
+    margin-bottom: 10px;
+}
+
+.project-card .card-link {
+    color: #3c3f58;
+    text-decoration: none;
+}
+
+.project-card img {
+    height: 150px;
+    width: auto;
+}

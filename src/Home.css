@@ -1,0 +1,58 @@
+.introduction {
+    background-color: #2e3047;
+    color: #3c3f58;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.introduction {
+    margin-top: -13%;
+    width: 40%;
+    padding: 5%;
+    border-radius: 15px;
+    text-align: left;
+    background-color: #bfc8d0;
+}
+
+.introduction h1 {
+    margin-top: 0;
+    font-family: 'Noto Serif';
+}
+
+.introduction h4 {
+    margin-bottom: 20px;
+    font-family: 'Agbalumo';
+    font-family: 'Merriweather', serif;
+}
+
+.introduction Button {
+    margin-top: 20px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.contact-link {
+    color: #3c3f58;
+    font-size: 24px;
+    margin-right: 5%;
+}
+
+.contact-icon {
+    margin: 0 10px;
+}
