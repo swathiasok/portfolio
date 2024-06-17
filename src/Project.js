@@ -32,7 +32,7 @@ function Projects() {
       {
         title: "Blogging Site",
         description: "EJS, NodeJS, Express, MongoDB",
-        imageUrl: "images/blog_site.gif"
+        imageUrl: "images/traffic.jpg"
       },
       {
         title: "Stocks App",
