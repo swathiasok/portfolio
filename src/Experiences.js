@@ -1,7 +1,7 @@
 import React from 'react';
 import './Experience.css';
 
-function Timeline() {
+function Experience() {
   const timelineData = [
     {
       date: "Jul '22 - Nov '23",
@@ -43,4 +43,4 @@ function Timeline() {
   );
 }
 
-export default Timeline;
+export default Experience;

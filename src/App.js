@@ -1,8 +1,9 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './Navbar';
-import Home from './Home';
+import Introduction from './Home';
 import Experience from './Experiences';
-import Project from './Project';
+import Projects from './Project';
 import './App.css';
 import Particles from "react-tsparticles";
 import { loadLinksPreset } from '@tsparticles/preset-links';
@@ -15,13 +16,21 @@ function App() {
 
   return (
     <div className="App">
-        <NavBar/>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Introduction />} />
+          <Route path="/skills" element={<Introduction />} />
+          <Route path="/experiences" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </Router>
         <br />
-        <Home />
+        <Introduction />
         <hr />
         <Experience />
         <hr />
-        <Project />
+        <Projects />
       </div>
   );
 }
