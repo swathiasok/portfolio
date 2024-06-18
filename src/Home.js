@@ -17,14 +17,16 @@ const [showContacts, setShowContacts] = useState(false);
 
   return (
     <div className="home">
-        <div className="introduction">
-            <p>Hi, I am</p>
-            <h1>Swathi Asokraj</h1>
-            <p>
-                A versatile software developer with expertise in web development, machine learning, and a keen interest in deep learning and computer vision.
-            </p>
-            <h4>Let's transform ideas into immersive experiences together.</h4>
-            <div className="contact-container">
+  <div className="introduction">
+    <div className="content-container">
+      <div className="text-container">
+        <p>Hi, I am</p>
+        <h1>Swathi Asokraj</h1>
+        <p>
+          A versatile software developer with expertise in web development, machine learning, and a keen interest in deep learning and computer vision.
+        </p>
+        <h4>Let's transform ideas into immersive experiences together.</h4>
+        <div className="contact-container">
           <Button 
             style={{ backgroundColor: "transparent", border: "2px solid #3c3f58", color: "#3c3f58" }}
             onClick={handleContactClick}
@@ -45,8 +47,13 @@ const [showContacts, setShowContacts] = useState(false);
             </div>
           )}
         </div>
-        </div>
+      </div>
+      <div className="image-container">
+        <img src={process.env.PUBLIC_URL + '/images/IMG_2362.jpg'} alt="Swathi Asokraj" className="profile-image" />
+      </div>
     </div>
+  </div>
+</div>
   );
 }
 

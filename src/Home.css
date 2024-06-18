@@ -56,3 +56,40 @@
 .contact-icon {
     margin: 0 10px;
 }
+
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    /* Align items horizontally */
+    align-items: center;
+}
+
+.text-container {
+    flex: 1;
+    /* Take remaining space */
+}
+
+.image-container {
+    flex: 1;
+    /* Take remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    /* Makes the image round */
+    margin-right: 20px;
+    /* Adjust spacing between text and image */
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+    }
+}
