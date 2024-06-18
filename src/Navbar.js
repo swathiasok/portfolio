@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <Navbar expand="lg" className="nav-body">
       <Container fluid> 
-        <Button class="resume-button" style={{ backgroundColor:"transparent", border: "2px solid #5B9A8B", color:"#5B9A8B"}}>
+        <Button class="resume-button" style={{ backgroundColor:"transparent", border: "2px solid #5B9A8B", color:"#5B9A8B", marginLeft:"1%"}}>
           <Nav.Link className='nav-button' href="https://drive.google.com/file/d/1ZHVUYNy9N6fukShhehUwQIwmdcln9QS2/view?usp=sharing" download="SwathiA_Resume.pdf">
               CV <i class="fas fa-download"></i> 
           </Nav.Link>

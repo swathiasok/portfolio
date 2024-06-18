@@ -22,7 +22,7 @@ const [showContacts, setShowContacts] = useState(false);
       <div className="text-container">
         <p>Hi, I am</p>
         <h1>Swathi Asokraj</h1>
-        <p>
+        <p style={{ textAlign: 'justify' }}>
           A versatile software developer with expertise in web development, machine learning, and a keen interest in deep learning and computer vision.
         </p>
         <h4>Let's transform ideas into immersive experiences together.</h4>
@@ -49,7 +49,7 @@ const [showContacts, setShowContacts] = useState(false);
         </div>
       </div>
       <div className="image-container">
-        <img src={process.env.PUBLIC_URL + '/images/IMG_2362.jpg'} alt="Swathi Asokraj" className="profile-image" />
+        <img src={process.env.PUBLIC_URL + '/images/image_2.jpg'} alt="Swathi Asokraj" className="profile-image" />
       </div>
     </div>
   </div>
