@@ -18,7 +18,7 @@ function Projects() {
         imageUrl: "images/object_detect.webp"
       },
       {
-        title: "Mask DetectionV",
+        title: "Mask Detection",
         description: "Python, Keras, Tensorflow",
         imageUrl: "images/mask_recog.jpg"
       },
@@ -51,60 +51,46 @@ function Projects() {
 
   return (
     <Container className="projects">
-      <Row className="section">
-        <Col xs={12} md={2}>
-          <h2 className="section-title">DL and CV</h2>
-        </Col>
-        <Col xs={12} md={10}>
-          <Row xs={1} md={2} lg={4} className="g-4">
-            {projectsData.dlAndCv.map((project, index) => (
-              <Col key={index}>
-                <ProjectCard project={project} />
-              </Col>
-            ))}
-          </Row>
-        </Col>
-      </Row>
-      <Row className="section">
-        <Col xs={12} md={2}>
-          <h2 className="section-title">Web Development</h2>
-        </Col>
-        <Col xs={12} md={10}>
-          <Row xs={1} md={2} lg={4} className="g-4">
-            {projectsData.webDevelopment.map((project, index) => (
-              <Col key={index}>
-                <ProjectCard project={project} />
-              </Col>
-            ))}
-          </Row>
-        </Col>
-      </Row>
-      <Row className="section">
-        <Col xs={12} md={2}>
-          <h2 className="section-title">IoT</h2>
-        </Col>
-        <Col xs={12} md={10}>
-          <Row xs={1} md={2} lg={4} className="g-4">
-            {projectsData.iot.map((project, index) => (
-              <Col key={index}>
-                <ProjectCard project={project} />
-              </Col>
-            ))}
-          </Row>
-        </Col>
-      </Row>
+      <ProjectSection title="DL and CV" projects={projectsData.dlAndCv} />
+      <ProjectSection title="Web Development" projects={projectsData.webDevelopment} />
+      <ProjectSection title="IoT" projects={projectsData.iot} />
     </Container>
+  );
+}
+
+function ProjectSection({ title, projects }) {
+  return (
+    <Row className="section">
+      <Col xs={12} md={2}>
+        <h2 className="section-title">{title}</h2>
+      </Col>
+      <Col xs={12} md={10}>
+        <Row xs={1} md={2} lg={4} className="g-4">
+          {projects.map((project, index) => (
+            <Col key={index}>
+              <ProjectCard project={project} />
+            </Col>
+          ))}
+        </Row>
+      </Col>
+    </Row>
   );
 }
 
 function ProjectCard({ project }) {
   return (
     <Card className="project-card">
-      <Card.Img variant="top" src={project.imageUrl} alt={project.title} />
+      <Card.Img
+        variant="top"
+        src={`${process.env.PUBLIC_URL}/${project.imageUrl}`}
+        alt={project.title}
+      />
       <Card.Body>
         <Card.Title>{project.title}</Card.Title>
-        <Card.Text ><i>{project.description}</i></Card.Text>
-        <Card.Link href={project.link}>
+        <Card.Text>
+          <i>{project.description}</i>
+        </Card.Text>
+        <Card.Link href={project.link} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} />
         </Card.Link>
       </Card.Body>
