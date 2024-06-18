@@ -19,7 +19,6 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav style={{padding:"1%"}}>
           <Nav.Link as={Link} className="nav-link" to="/">Home</Nav.Link>
-            <Nav.Link as={Link} className="nav-link" to="/skills">Skills</Nav.Link>
             <Nav.Link as={Link} className="nav-link" to="/experiences">Experiences</Nav.Link>
             <Nav.Link as={Link} className="nav-link" to="/projects">Projects</Nav.Link>
           </Nav>

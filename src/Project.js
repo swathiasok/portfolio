@@ -51,7 +51,7 @@ function Projects() {
 
   return (
     <Container className="projects">
-      <ProjectSection title="DL and CV" projects={projectsData.dlAndCv} />
+      <ProjectSection title="Computer Vision" projects={projectsData.dlAndCv} />
       <ProjectSection title="Web Development" projects={projectsData.webDevelopment} />
       <ProjectSection title="IoT" projects={projectsData.iot} />
     </Container>
