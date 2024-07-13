@@ -49,7 +49,7 @@ const [showContacts, setShowContacts] = useState(false);
         </div>
       </div>
       <div className="image-container">
-        <img src={process.env.PUBLIC_URL + '/images/image_2.jpg'} alt="Swathi Asokraj" className="profile-image" />
+        <img src={process.env.PUBLIC_URL + '/images/intro.jpg'} alt="Swathi Asokraj" className="profile-image" />
       </div>
     </div>
   </div>

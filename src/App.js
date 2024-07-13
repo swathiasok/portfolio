@@ -1,36 +1,34 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import NavBar from './Navbar';
 import Introduction from './Home';
 import Experience from './Experiences';
 import Projects from './Project';
+import Skills from './Skills';
 import './App.css';
-import Particles from "react-tsparticles";
-import { loadLinksPreset } from '@tsparticles/preset-links';
-import { loadFull } from "tsparticles";
 
 function App() {
-  const particlesInit = async (main) => {
-    await loadLinksPreset(main);
-  };
-
   return (
     <div className="App">
       <Router>
         <NavBar />
-        <Routes>
-          <Route path="/" element={<Introduction />} />
-          <Route path="/experiences" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
+        <div id="home">
+          <Introduction />
+        </div>
+        <hr></hr>
+        <div id="skills">
+          <Skills />
+        </div>
+        <hr></hr>
+        <div id="experiences">
+          <Experience />
+        </div>
+        <hr></hr>
+        <div id="projects">
+          <Projects />
+        </div>
       </Router>
-        <br />
-        <Introduction />
-        <hr />
-        <Experience />
-        <hr />
-        <Projects />
-      </div>
+    </div>
   );
 }
 

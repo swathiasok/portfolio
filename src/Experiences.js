@@ -4,37 +4,59 @@ import './Experience.css';
 function Experience() {
   const timelineData = [
     {
-      date: "Jul '22 - Nov '23",
+      date: "2024 - 2025",
+      company: 'University of Southern California',
+      position: 'M.S Computer Science',
+      imageUrl: 'images/experience/usc.jpg',
+    },
+    {
+      date: "2022 - 2023",
       company: 'Workato India Pvt Ltd',
       position: 'Software Development Engineer',
-      description: 'Developed Ruby scripts for automation of operations across various product development applications.'
+      imageUrl: 'images/experience/workato.png',
     },
     {
-      date: "Jun '21 - Aug '21",
+      date: "2021",
       company: 'Optum Global (UHG)',
       position: 'Software Engineer Intern',
-      description: 'Built a Kafka API program in Java with SpringBoot for real-time data streaming, incorporating file handling for data processing and database storage.'
+      imageUrl: 'images/experience/optum.png',
     },
     {
-      date: "Aug '18 - May '22",
+      date: "2018 - 2022",
       company: 'SSN College of Engineering',
       position: 'B. Tech Information Technology',
-      description: 'Served as Class Representative for four consecutive years, enhancing communication between students and department management.'
+      imageUrl: 'images/experience/ssn.png',
     },
   ];
 
   return (
     <div className="container py-5">
+      <i><h2 className='title'>EXPERIENCES</h2></i>
       <div className="main-timeline">
         {timelineData.map((item, index) => (
           <div key={index} className={`timeline ${index % 2 === 0 ? 'left' : 'right'}`}>
-            <div className="card">
-              <div className="card-body p-4">
-                <h3>{item.date}</h3>
-                <h4>{item.company}</h4>
-                <p className="mb-0 pos">{item.position}</p>
-                <p className="mb-0">{item.description}</p>
-              </div>
+            <div className="timeline-content">
+              {index % 2 === 1 ? (
+                <>
+                  <img src={`${process.env.PUBLIC_URL}/${item.imageUrl}`} alt={item.company} className="timeline-img img-left img-fluid" />
+                  <div className="timeline-text left-text">
+                    <p className='exp-date'>{item.date}</p>
+                    <p className='exp-title'>{item.company}</p>
+                    <p className="pos">{item.position}</p>
+                    <p className='exp-desc'>{item.description}</p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="timeline-text right-text">
+                    <p className='exp-date'>{item.date}</p>
+                    <p className='exp-title'>{item.company}</p>
+                    <p className="pos">{item.position}</p>
+                    <p className='exp-desc'>{item.description}</p>
+                  </div>
+                  <img src={`${process.env.PUBLIC_URL}/${item.imageUrl}`} alt={item.company} className="timeline-img img-right img-fluid" />
+                </>
+              )}
             </div>
           </div>
         ))}

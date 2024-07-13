@@ -1,10 +1,17 @@
+/* Navbar.css */
 .nav-body {
-    background-color: transparent !important;
-    color: #3bba9c !important;
+    background-color: #2e3047 !important;
+    color: #F7E7DC !important;
+    position: sticky !important;
+    opacity: 0.5;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding-bottom: 0 !important;
 }
 
 .nav-link {
-    color: #3bba9c !important;
+    color: #F7E7DC !important;
     padding-right: 7% !important;
     font-family: "Titillium Web", sans-serif;
     font-weight: 600;
@@ -16,5 +23,6 @@
 }
 
 .nav-link:hover {
+    color: #DA7297 !important;
     font-weight: bold;
 }
