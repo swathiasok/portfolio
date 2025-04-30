@@ -18,7 +18,7 @@ function NavBar() {
         </Button>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <Nav style={{padding:"1%"}}>
+          <Nav style={{padding:"1% 4%"}}>
             <Nav.Link as={ScrollLink} className="nav-link" to="home" smooth={true} duration={500}>Home</Nav.Link>
             <Nav.Link as={ScrollLink} className="nav-link" to="skills" smooth={true} duration={500}>Skills</Nav.Link>
             <Nav.Link as={ScrollLink} className="nav-link" to="experiences" smooth={true} duration={500}>Experiences</Nav.Link>
