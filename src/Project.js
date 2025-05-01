@@ -114,43 +114,44 @@ function ProjectCard({ project }) {
   };
 
   return (
-    <div className={`flip-card ${flipped ? 'flipped' : ''}`} onClick={handleFlip}>
-      <div className="flip-card-inner">
-        <div className="flip-card-front">
-          <Card>
-            <Card.Img
-              variant="top"
-              src={`${process.env.PUBLIC_URL}/${project.imageUrl}`}
-              alt={project.title}
-              className="card-img-top"
-            />
-            <Card.Body>
-              <Card.Title>{project.title}</Card.Title>
-              <Card.Text style={{ textAlign: 'center' }}>
-                <i>{project.description}</i>
-              </Card.Text>
-              <Card.Link href={project.link} target="_blank" alt="github link" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} />
-              </Card.Link>
-            </Card.Body>
-          </Card>
-        </div>
-        <div className="flip-card-back">
-          <Card>
-            <Card.Body>
-              <hr></hr>
-              <Card.Text>
-                <i>{project.info}</i>
-              </Card.Text>
-              <hr></hr>
-              <Card.Link href={project.link} target="_blank" alt="github link" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} />
-              </Card.Link>
-            </Card.Body>
-          </Card>
+      <div className={`flip-card ${flipped ? 'flipped' : ''}`} onClick={handleFlip}>
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
+            <Card>
+              <Card.Img
+                variant="top"
+                src={`${process.env.PUBLIC_URL}/${project.imageUrl}`}
+                alt={project.title}
+                className="card-img-top"
+              />
+              <Card.Body>
+                <Card.Title>{project.title}</Card.Title>
+                <Card.Link href={project.link} target="_blank" alt="github link" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                </Card.Link>
+                <Card.Text style={{ textAlign: 'center' }}>
+                  <i>{project.description}</i>
+                </Card.Text>
+                
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="flip-card-back">
+            <Card>
+              <Card.Body>
+                <hr></hr>
+                <Card.Text>
+                  <i>{project.info}</i>
+                </Card.Text>
+                <hr></hr>
+                <Card.Link href={project.link} target="_blank" alt="github link" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                </Card.Link>
+              </Card.Body>
+            </Card>
+          </div>
         </div>
       </div>
-    </div>
   );
 }
 

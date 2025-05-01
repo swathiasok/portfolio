@@ -204,3 +204,44 @@ p {
         max-width: 100%;
     }
 }
+
+@media screen and (max-width: 760px) {
+    .timeline-card {
+        background-color: #bfc8d0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        padding: 1rem;
+        margin: 1rem 0;
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #3c3f58 !important;
+    }
+
+    .timeline-text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .timeline-img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .timeline::after,
+    .main-timeline::after,
+    .left::before,
+    .right::before {
+        display: none;
+    }
+
+    .left,
+    .right {
+        padding: 0 !important;
+        left: 0 !important;
+        align-items: center;
+    }
+}

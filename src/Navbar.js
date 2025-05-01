@@ -16,7 +16,7 @@ function NavBar() {
               CV <i className="fas fa-download"></i> 
           </Nav.Link>
         </Button>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav style={{padding:"1% 5%"}}>
             <Nav.Link as={ScrollLink} className="nav-link" to="home" smooth={true} duration={500}>Home</Nav.Link>

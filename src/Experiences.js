@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import './Experience.css';
 
 function Experience() {
@@ -41,7 +42,7 @@ function Experience() {
       <div className="main-timeline">
         {timelineData.map((item, index) => (
           <div key={index} className={`timeline ${index % 2 === 0 ? 'left' : 'right'}`}>
-            <div className="timeline-content">
+          <div className={`timeline-content ${window.innerWidth <= 600 ? 'timeline-card' : ''}`}>
               {index % 2 === 1 ? (
                 <>
                   <img src={`${process.env.PUBLIC_URL}/${item.imageUrl}`} alt={item.company} className="timeline-img img-left img-fluid" />
