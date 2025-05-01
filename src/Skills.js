@@ -9,14 +9,15 @@ function Skills() {
       { name: 'Java', imageUrl: 'images/skills/java.jpg' },
       { name: 'Ruby', imageUrl: 'images/skills/ruby.png' },
       { name: 'JavaScript', imageUrl: 'images/skills/js.png' },
-      { name: 'SQL', imageUrl: 'images/skills/sql.png' },
-      { name: 'Swift', imageUrl: 'images/skills/swift.png' }
+      { name: 'TypeScript', imageUrl: 'images/skills/ts.png' },
+      { name: 'SQL', imageUrl: 'images/skills/sql.png' }
     ],
     databases: [
       { name: 'MySQL', imageUrl: 'images/skills/mysql.png' },
       { name: 'SQLite', imageUrl: 'images/skills/sqlite.jpeg' },
       { name: 'MongoDB', imageUrl: 'images/skills/mongodb.jpg' },
-      { name: 'Firebase', imageUrl: 'images/skills/firebase.png' }
+      { name: 'Firebase', imageUrl: 'images/skills/firebase.png' },
+      { name: 'PostgreSQL', imageUrl: 'images/skills/postgres.png' }
     ],
     webDevelopment: [
       { name: 'HTML', imageUrl: 'images/skills/htm.webp' },
@@ -26,11 +27,13 @@ function Skills() {
       { name: 'Flask', imageUrl: 'images/skills/flask.png' },
       { name: 'AngularJS', imageUrl: 'images/skills/angular.png' },
       { name: 'ReactJS', imageUrl: 'images/skills/react.png' },
+      { name: 'Ruby on Rails', imageUrl: 'images/skills/rails.png' },
       { name: 'Node.js', imageUrl: 'images/skills/nodejs.jpg' },
       { name: 'Flutter', imageUrl: 'images/skills/flutter.svg' },
       { name: 'SwiftUI', imageUrl: 'images/skills/swiftui.png' }
     ],
     cloud: [
+      { name: 'AWS', imageUrl: 'images/skills/aws.png' },
       { name: 'GCP', imageUrl: 'images/skills/gcp.png' },
       { name: 'Docker', imageUrl: 'images/skills/docker.png' },
       { name: 'Kafka', imageUrl: 'images/skills/kafka.webp' },

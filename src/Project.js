@@ -38,6 +38,13 @@ function Projects() {
     ],
     webDevelopment: [
       {
+        title: "Code Playground",
+        description: "React, NodeJS",
+        imageUrl: "images/project/code.png",
+        link: "https://github.com/swathiasok/CodePlayground",
+        info: "(Ongoing) A collaborative code playground where multiple users can write, edit, and test code in real-time. Built using React and Socket.io for live syncing, it enables seamless peer programming and code sharing."
+      },
+      {
         title: "Blogging Site",
         description: "EJS, NodeJS, Express, MongoDB",
         imageUrl: "images/project/blog_site.gif",
@@ -52,7 +59,14 @@ function Projects() {
         info: "This project entails the creation of a web and iOS mobile application, where users can access detailed stock information, execute stock trades, and perform a range of functionalities."
       },
     ],
-    iot: [
+    other: [
+      {
+        title: "DoppelDash - Doppelgänger Game",
+        description: "Unity, C#",
+        imageUrl: "images/project/doppeldash.png",
+        link: "https://github.com/swathiasok/DoppelDash",
+        info: "A gravity-flipping 2D puzzle platformer where players control both a main character and a doppelgänger. The game challenges players to solve levels by coordinating between the two entities, navigating obstacles, and timed jumps."
+      },
       {
         title: "Automatic Traffic Control System",
         description: "Arduino",
@@ -68,7 +82,7 @@ function Projects() {
       <i><h2 className='project-title'>PROJECTS</h2></i>
       <ProjectSection title="Artificial Intelligence" projects={projectsData.dlAndCv} />
       <ProjectSection title="Web Development" projects={projectsData.webDevelopment} />
-      <ProjectSection title="IoT" projects={projectsData.iot} />
+      <ProjectSection title="Other" projects={projectsData.other} />
     </Container>
   );
 }

@@ -25,6 +25,7 @@ const [showContacts, setShowContacts] = useState(false);
         <p style={{ textAlign: 'justify' }}>
           A versatile software developer with expertise in web development, machine learning, and a keen interest in deep learning and computer vision.
         </p>
+        <br></br>
         <h4>Let's transform ideas into immersive experiences together.</h4>
         <div className="contact-container">
           <Button 

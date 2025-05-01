@@ -4,6 +4,12 @@ import './Experience.css';
 function Experience() {
   const timelineData = [
     {
+      date: "2025 - 2025",
+      company: 'Meta Platforms, Inc.',
+      position: 'Software Development Engineer Intern',
+      imageUrl: 'images/experience/meta.png',
+    },
+    {
       date: "2024 - 2025",
       company: 'University of Southern California',
       position: 'M.S Computer Science',
