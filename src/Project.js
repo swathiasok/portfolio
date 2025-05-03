@@ -8,7 +8,7 @@ function Projects() {
   const projectsData = {
     dlAndCv: [
       {
-        title: "TrendTok: AI-Driven Trend Generator",
+        title: "TrendTok",
         description: "Python, Llama, MusicGen",
         imageUrl: "images/project/trendtok.png",
         link: "https://github.com/swathiasok/TikTok-Trend-Fusion",
